@@ -4,9 +4,8 @@
 PKG             := libpcsclite
 $(PKG)_IGNORE   :=
 $(PKG)_VERSION  := 2.4.0
-$(PKG)_CHECKSUM := 5544509999b3d5360f12b485aca69c48b43d875ac7ed1cb4afc2e33e49652abb
 $(PKG)_SUBDIR   := pcsc-lite-$($(PKG)_VERSION)
-$(PKG)_FILE     := pcsc-lite-$($(PKG)_VERSION).tar.gz
+$(PKG)_FILE     := pcsc-lite-$($(PKG)_VERSION).tar.xz
 $(PKG)_URL      := https://pcsclite.apdu.fr/files/$($(PKG)_FILE)
 $(PKG)_DEPS     := cc
 
