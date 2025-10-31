@@ -6,7 +6,7 @@ $(PKG)_IGNORE   :=
 $(PKG)_VERSION  := 2.4.0
 $(PKG)_SUBDIR   := pcsc-lite-$($(PKG)_VERSION)
 $(PKG)_FILE     := pcsc-lite-$($(PKG)_VERSION).tar.xz
-$(PKG)_URL      := https://pcsclite.apdu.fr/files/$($(PKG)_FILE)
+$(PKG)_URL      := https://pcsclite.apdu.fr/files/pcsc-lite-2.4.0.tar.xz
 $(PKG)_DEPS     := cc
 
 define $(PKG)_UPDATE
