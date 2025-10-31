@@ -9,11 +9,11 @@ $(PKG)_FILE     := pcsc-lite-$($(PKG)_VERSION).tar.xz
 $(PKG)_URL      := https://pcsclite.apdu.fr/files/pcsc-lite-2.4.0.tar.xz
 $(PKG)_DEPS     := cc
 
-define $(PKG)_UPDATE
-    $(WGET) -q -O- 'https://pcsclite.apdu.fr/files/' | \
-    $(SED) -n 's,.*pcsc-lite-\([0-9.]*\)\.tar.*,\1,p' | \
-    tail -1
-endef
+#define $(PKG)_UPDATE
+#    $(WGET) -q -O- 'https://pcsclite.apdu.fr/files/' | \
+#    $(SED) -n 's,.*pcsc-lite-\([0-9.]*\)\.tar.*,\1,p' | \
+#    tail -1
+#endef
 
 define $(PKG)_BUILD
     cd '$(1)' && ./configure \
